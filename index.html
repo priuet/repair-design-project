@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
   	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="style.css">
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -78,10 +80,10 @@
     </div>
 
     <section class="repair-types">
-        <h3 class="repair-header">TYPES OF REPAIR</h3>
+        <p class="section_title">TYPES OF REPAIR</p>
         <div class="repair-options">
             <div class="repair-type">
-                <img src="https://fakeimg.pl/392x421/CDE1F6/?text=Hello" alt="" class="repair-img">
+                <img src="assets/images/repair-1.png" alt="" class="repair-img">
                 <ul class="repair-list">
                     <span class="repair-list-h">Redecorating</span>
                     <li class="repair-item">Dismantling of old coatings</li>
@@ -92,10 +94,10 @@
                     <li class="repair-item">Replacing sockets and switches</li>
                     <li class="repair-item">Replacing doors</li>
                 </ul>
-                <span class="repair-price">from 900 rub / m2 </span>
+                <button class="repair-price">from 900 rub / m2 </button>
             </div>
             <div class="repair-type">
-                <img src="https://fakeimg.pl/392x421/9CC5EF/?text=Hello" alt="" class="repair-img">
+                <img src="assets/images/repair-2.png" alt="" class="repair-img">
                 <ul class="repair-list">
                     <span class="repair-list-h">Overhaul</span>
                     <li class="repair-item">Dismantling of old coatings</li>
@@ -109,7 +111,7 @@
                 <span class="repair-price">from 900 rub / m2 </span>
             </div>            
             <div class="repair-type">
-                <img src="https://fakeimg.pl/392x421/388BDE/?text=Hello" alt="" class="repair-img">
+                <img src="assets/images/repair-3.png" alt="" class="repair-img">
                 <ul class="repair-list">
                     <span class="repair-list-h">Designer Repair</span>
                     <li class="repair-item">Dismantling of old coatings</li>
@@ -125,15 +127,192 @@
         </div>
       </section>
 
+    <section class="measurements">
+        <div class="measurements-wrap">
+            <div class="measurements-img">
+                <img src="assets/images/perks.png" alt="">
+            </div>
+            <div class="measurements-form-wrap">
+            <div class="measurements-form">
+                <form action="">
+                    <p class="measurements-p">Leave a request for free departure of the measurer</p>
+                    <div class="measurements-input-wrap">
+                    <label for="measurements-name">Name</label>
+                    <input placeholder="What is your name:" class="measurements-name" required />
+                </div>
+                <div class="measurements-input-wrap">
+                    <label for="measurements-phone">Phone</label>
+                    <input name="phone" placeholder="Your phone number:" class="measurements-phone"  required />
+                </div>
+                <div class="measurements-input-wrap">
+                    <label for="measurements-email">Email</label>
+                    <input name="email" placeholder="Your e-mail:" class="measurements-email"  required />
+                </div>
+                <div class="form_checkbox_measurements">
+                    <label for="politics" class="politics"></label>
+                    <input type="checkbox" id="politics" onclick="check();" autocomplete="on">I agree to the processing of personal data
+                </div>
+                    <button name="submit" class="measurements-btn" disabled="">call the measurer</button>       
+                </form>
+            </div>
+            <div class="save-money">
+                <img src="assets/images/pig.svg" alt="" class="save-money-img">
+                <p class="save-money-text">Help save 10 - 20% of the cost of materials</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="styles">
+        <div class="styles-wrap">
+            <div class="styles-list-wrap">
+            <p class="styles-header">We realize your wildest fantasies</p>
+            <ul class="styles-list">
+                <li class="styles-item">American classic</li>
+                <li class="styles-item">Empire</li>
+                <li class="styles-item">Classical</li>
+                <li class="styles-item">Loft</li>
+                <li class="styles-item">Minimalism</li>
+                <li class="styles-item">Provence</li>
+                <li class="styles-item">Romanticism</li>
+                <li class="styles-item">Scandinavian style</li>
+                <li class="styles-item">Mediterranean style</li>
+                <li class="styles-item">High tech</li>
+                <li class="styles-item">Eclecticism</li>
+            </ul>
+            </div>
+            <div class="styles-images">
+                <img src="assets/images/style1.png" alt="" class="styles-img">
+                <img src="assets/images/style2.png" alt="" class="styles-img">
+            </div>
+            <div class="styles-images">
+                <img src="assets/images/style3.png" alt="" class="styles-img">
+                <img src="assets/images/style4.png" alt="" class="styles-img">
+            </div>
+        </div>
+    </section>
 
+    <section class="design-project">
+        <div class="design-project-wrap">
+            <p class="section_title">design project</p>
+            <p class="section-subtitle">Design project not only helps to make the repair of your apartment more modern, but also significantly reduces the cost of materials and reduces the time of repair work.</p>
+        <div class="design-options">
+            <div class="design-type">
+                <div class="design-img-wrap">
+                    <img src="assets/images/design-1.png" alt="" class="design-img">
+                </div>
+                <div class="design-list-wrap">
+                <ul class="design-list">
+                    <span class="design-list-h">Mini</span>
+                    <li class="design-item">Measurement drawing</li>
+                    <li class="design-item">Redevelopment</li>
+                    <li class="design-item">Layout of furniture</li>
+                    <li class="design-item">Plumbing plan. equipment</li>
+                </ul>                  
+                <button class="design-price">150 rub / m2 </button>
+                </div>
+            </div>
+            <div class="design-type">
+                <div class="design-img-wrap">
+                    <img src="assets/images/design-2.png" alt="" class="repair-img">
+                </div>
+                <div class="design-list-wrap">
+                <ul class="design-list">
+                    <span class="design-list-h">Standart</span>
+                    <li class="design-item">Measurement drawing</li>
+                    <li class="design-item">Redevelopment</li>
+                    <li class="design-item">Layout of furniture</li>
+                    <li class="design-item">Plan of ceilings</li>
+                    <li class="design-item">Floor Plan</li>
+                    <li class="design-item">Electricians plan</li>
+                    <li class="design-item">Lighting plan</li>
+                </ul>
+                <span class="design-price">400 rub / m2 </span>
+            </div>
+            </div>            
+            <div class="design-type">
+                <div class="design-img-wrap">
+                    <img src="assets/images/repair-2.png" alt="" class="repair-img">
+                </div>
+                <div class="design-list-wrap">
+                <ul class="design-list">
+                    <span class="design-list-h">Full</span>
+                    <li class="design-item">Measurement drawing</li>
+                    <li class="design-item">Redevelopment</li>
+                    <li class="design-item">Layout of furniture</li>
+                    <li class="design-item">Plan of ceilings</li>
+                    <li class="design-item">Floor Plan</li>
+                    <li class="design-item">Electricians plan</li>
+                    <li class="design-item">Lighting plan</li>
+                    <li class="design-item">Wall reamers</li>
+                    <li class="design-item">3D visualization</li>
+                    <li class="design-item">Bill of materials</li>
+                    <li class="design-item">Departure for a selection of materials</li>
+                    <li class="design-item">Furniture selection</li>
+                </ul>
+                <span class="design-price">900 rub / m2 </span>
+            </div>
+            </div>        
+        </div>
+        </div>
+    </section>
 
-
-
+    <section class="team">
+        <div class="team-wrap">
+            <p class="section_title">our team</p>
+            <p class="section-subtitle">Our team has helped to become happier for more than 500 families and we are not going to stop.</p>
+        <div class="team">
+            <div class="team-member-wrap">
+                <div class="team-member">
+                    <div class="team-icon">
+                        <div class="team-img-wrap">
+                            <img src="assets/images/team-1.png" alt="" class="team-img">
+                        </div>
+                        <div class="team-name-wrap">
+                            <p class="team-name">Dmitry Tulyakov</p>
+                            <p class="team-job">Project manager</p>
+                            <p class="work-experience">Work experience 8 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-wrap">
+                <div class="team-member">
+                    <div class="team-icon">
+                        <div class="team-img-wrap">
+                            <img src="assets/images/team-2.png" alt="" class="team-img">
+                        </div>
+                        <div class="team-name-wrap">
+                            <p class="team-name">Larisa Kotlyarova</p>
+                            <p class="team-job">Designer</p>
+                            <p class="work-experience">Work experience 6 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member-wrap">
+                <div class="team-member">
+                    <div class="team-icon">
+                        <div class="team-img-wrap">
+                            <img src="assets/images/team-3.png" alt="" class="team-img">
+                        </div>
+                        <div class="team-name-wrap">
+                            <p class="team-name">Alexey Efimov</p>
+                            <p class="team-job">Foreman</p>
+                            <p class="work-experience">Work experience 12 years</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-description">
+            <p class="team-text">Each employee of our company is a qualified full-time specialist with work experience of 6 years. We do not have laborers and guest workers, each employee carries out work corresponding to his specialty.</p>
+        </div>
+        </div>
+    </section>
 
     </main>
     </div>
-
-
 
 
 
